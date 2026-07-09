@@ -548,12 +548,12 @@ button, input, select, textarea { font: inherit; }
 .petal-rain span {
   position: absolute;
   top: -8%;
-  width: 18px;
-  height: 28px;
-  background: radial-gradient(circle at 35% 30%, rgba(255,255,255,0.95), rgba(246,232,226,0.55) 55%, rgba(230,190,185,0.25));
+  width: 26px;
+  height: 36px;
+  background: radial-gradient(circle at 35% 30%, rgba(255,255,255,1), rgba(250,245,242,0.95) 60%, rgba(242,220,220,0.55));
   border-radius: 70% 30% 65% 35%;
-  opacity: 0.45;
-  animation: petalFall 18s linear infinite;
+  opacity: 0.75;
+  animation: petalFall 24s linear infinite;
   transform: rotate(20deg);
 }
 
