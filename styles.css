@@ -545,3 +545,11 @@ button, input, select, textarea { font: inherit; }
   .reveal { opacity: 1; transform: none; transition: none; }
   .button:hover { transform: none; }
 }
+<div class="petal-rain" aria-hidden="true">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
