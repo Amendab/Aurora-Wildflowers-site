@@ -6,7 +6,7 @@ const products = [
     price: "From $120",
     category: ["flowers", "memorial"],
     tag: "Best seller",
-    image: "assets/images/rose-hexagon-preservation-thumb.webp",
+    image: "rose-hexagon-preservation-thumb.webp",
     alt: "White roses and greenery preserved in a hexagon resin block",
     description: "A custom resin block using natural flowers, greenery, pearls and optional names, dates or a short quote."
   },
@@ -15,7 +15,7 @@ const products = [
     price: "From $150",
     category: ["flowers", "home"],
     tag: "Custom size",
-    image: "assets/images/purple-hexagon-wedding-thumb.webp",
+    image: "purple-hexagon-wedding-thumb.webp",
     alt: "Purple and white flowers preserved in a hexagon resin keepsake",
     description: "Beautiful for wedding bouquets, anniversaries and statement display pieces with pastel floral arrangements."
   },
@@ -24,7 +24,7 @@ const products = [
     price: "From $75",
     category: ["memorial", "flowers"],
     tag: "Meaningful gift",
-    image: "assets/images/purple-arch-keepsake-thumb.webp",
+    image: "purple-arch-keepsake-thumb.webp",
     alt: "Arch-shaped resin keepsake with purple and white wildflowers",
     description: "A standing arch with natural flowers, pearls and custom lettering for remembrance, love or home blessings."
   },
@@ -33,7 +33,7 @@ const products = [
     price: "From $65",
     category: ["memorial", "gifts"],
     tag: "Photo option",
-    image: "assets/images/photo-heart-keepsake-thumb.webp",
+    image: "photo-heart-keepsake-thumb.webp",
     alt: "Heart-shaped resin photo keepsake with dried flowers",
     description: "A heart-shaped keepsake with a small photo, soft flowers, pearls and a custom message for family memories."
   },
@@ -42,7 +42,7 @@ const products = [
     price: "From $40 / set of 4",
     category: ["home", "gifts"],
     tag: "Coasters",
-    image: "assets/images/ocean-coaster-set-thumb.webp",
+    image: "ocean-coaster-set-thumb.webp",
     alt: "Ocean-inspired resin coasters with blue waves, shells and sand",
     description: "Beach-style coasters with shells, sand, pebble accents and soft blue resin waves."
   },
@@ -51,7 +51,7 @@ const products = [
     price: "From $12 each",
     category: ["home", "gifts"],
     tag: "Small gift",
-    image: "assets/images/ocean-coaster-main-thumb.webp",
+    image: "ocean-coaster-main-thumb.webp",
     alt: "Ocean resin coaster with shells and sand",
     description: "A sweet handmade coaster for desks, side tables, ring dishes or small gifts."
   },
@@ -60,16 +60,16 @@ const products = [
     price: "From $16",
     category: ["home", "gifts"],
     tag: "Pastel gold",
-    image: "assets/images/gold-ring-dish-thumb.webp",
+    image: "gold-ring-dish-thumb.webp",
     alt: "Gold leaf resin ring dish and tray",
-    description: "Soft pastel resin dish with gold flakes for jewelry, keys, candles or vanity décor."
+    description: "Soft resin dish with gold flakes for jewelry, keys, candles or vanity décor."
   },
   {
     name: "Custom Scripture / Quote Tray",
     price: "From $25",
     category: ["home", "gifts"],
     tag: "Custom text",
-    image: "assets/images/shepherd-trinket-tray-thumb.webp",
+    image: "shepherd-trinket-tray-thumb.webp",
     alt: "Resin tray with custom scripture lettering",
     description: "A personalized tray with lettering, silhouettes, soft shimmer and your favourite short phrase."
   },
@@ -78,7 +78,7 @@ const products = [
     price: "From $8 each",
     category: ["gifts"],
     tag: "Cute add-on",
-    image: "assets/images/cat-keychains-bright-thumb.webp",
+    image: "cat-keychains-bright-thumb.webp",
     alt: "Two cat-shaped resin keychains",
     description: "Lightweight keychains with glitter, tiny flowers, initials or cute shapes. Great for party gifts."
   },
@@ -96,7 +96,7 @@ const products = [
     category: ["gifts"],
     tag: "Reader gift",
     placeholder: "Bookmarks",
-    description: "Pastel bookmarks with dried flowers, shimmer, initials or small gold details."
+    description: "bookmarks with dried flowers, shimmer, initials or small gold details."
   },
   {
     name: "Resin Wall Clock",
