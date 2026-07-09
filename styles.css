@@ -549,68 +549,38 @@ button, input, select, textarea { font: inherit; }
   position: fixed;
   inset: 0;
   pointer-events: none;
+  z-index: 9999;
   overflow: hidden;
-  z-index: 3;
-}
-
-.petal-rain {
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  overflow: hidden;
-  z-index: 3;
 }
 
 .petal-rain span {
   position: absolute;
-  top: -10%;
+  top: -50px;
   width: 24px;
   height: 34px;
-  background:
-    radial-gradient(circle at 35% 28%,
-      rgba(255, 255, 255, 1),
-      rgba(255, 248, 245, 0.95) 48%,
-      rgba(238, 205, 205, 0.55) 100%);
+  background: rgba(255, 245, 245, 0.85);
   border-radius: 70% 30% 65% 35%;
-  opacity: 0.72;
-  filter: drop-shadow(0 6px 10px rgba(120, 90, 80, 0.12));
-  animation: petalFall 26s ease-in-out infinite;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+  animation: petalFall 18s linear infinite;
 }
 
-.petal-rain span::after {
-  content: "";
-  position: absolute;
-  width: 55%;
-  height: 1px;
-  top: 48%;
-  left: 22%;
-  background: rgba(190, 145, 145, 0.25);
-  transform: rotate(35deg);
-}
-
-.petal-rain span:nth-child(1) { left: 7%; animation-delay: 0s; animation-duration: 28s; }
-.petal-rain span:nth-child(2) { left: 22%; animation-delay: 5s; animation-duration: 32s; width: 19px; height: 28px; opacity: 0.58; }
-.petal-rain span:nth-child(3) { left: 39%; animation-delay: 2s; animation-duration: 30s; }
-.petal-rain span:nth-child(4) { left: 61%; animation-delay: 8s; animation-duration: 34s; width: 20px; height: 30px; opacity: 0.6; }
-.petal-rain span:nth-child(5) { left: 76%; animation-delay: 4s; animation-duration: 31s; }
-.petal-rain span:nth-child(6) { left: 91%; animation-delay: 10s; animation-duration: 36s; width: 18px; height: 27px; opacity: 0.55; }
+.petal-rain span:nth-child(1) { left: 10%; animation-delay: 0s; }
+.petal-rain span:nth-child(2) { left: 25%; animation-delay: 3s; }
+.petal-rain span:nth-child(3) { left: 40%; animation-delay: 6s; }
+.petal-rain span:nth-child(4) { left: 60%; animation-delay: 2s; }
+.petal-rain span:nth-child(5) { left: 75%; animation-delay: 5s; }
+.petal-rain span:nth-child(6) { left: 90%; animation-delay: 8s; }
 
 @keyframes petalFall {
   0% {
-    transform: translateY(-12vh) translateX(0) rotate(0deg);
+    transform: translateY(-10vh) translateX(0) rotate(0deg);
     opacity: 0;
   }
-  12% {
-    opacity: 0.72;
-  }
-  38% {
-    transform: translateY(38vh) translateX(55px) rotate(95deg);
-  }
-  68% {
-    transform: translateY(72vh) translateX(-35px) rotate(190deg);
+  10% {
+    opacity: 0.9;
   }
   100% {
-    transform: translateY(112vh) translateX(60px) rotate(310deg);
+    transform: translateY(110vh) translateX(70px) rotate(260deg);
     opacity: 0;
   }
 }
