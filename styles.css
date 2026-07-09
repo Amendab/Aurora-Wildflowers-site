@@ -545,38 +545,72 @@ button, input, select, textarea { font: inherit; }
   .reveal { opacity: 1; transform: none; transition: none; }
   .button:hover { transform: none; }
 }
-.petal-rain span {
-  position: absolute;
-  top: -8%;
-  width: 26px;
-  height: 36px;
-  background: radial-gradient(circle at 35% 30%, rgba(255,255,255,1), rgba(250,245,242,0.95) 60%, rgba(242,220,220,0.55));
-  border-radius: 70% 30% 65% 35%;
-  opacity: 0.75;
-  animation: petalFall 24s linear infinite;
-  transform: rotate(20deg);
+.petal-rain {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 3;
 }
 
-.petal-rain span:nth-child(1) { left: 8%; animation-delay: 0s; animation-duration: 22s; }
-.petal-rain span:nth-child(2) { left: 22%; animation-delay: 5s; animation-duration: 26s; width: 14px; height: 22px; }
-.petal-rain span:nth-child(3) { left: 41%; animation-delay: 2s; animation-duration: 24s; }
-.petal-rain span:nth-child(4) { left: 63%; animation-delay: 8s; animation-duration: 28s; width: 15px; height: 24px; }
-.petal-rain span:nth-child(5) { left: 78%; animation-delay: 4s; animation-duration: 25s; }
-.petal-rain span:nth-child(6) { left: 92%; animation-delay: 10s; animation-duration: 30s; width: 13px; height: 21px; }
+.petal-rain {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.petal-rain span {
+  position: absolute;
+  top: -10%;
+  width: 24px;
+  height: 34px;
+  background:
+    radial-gradient(circle at 35% 28%,
+      rgba(255, 255, 255, 1),
+      rgba(255, 248, 245, 0.95) 48%,
+      rgba(238, 205, 205, 0.55) 100%);
+  border-radius: 70% 30% 65% 35%;
+  opacity: 0.72;
+  filter: drop-shadow(0 6px 10px rgba(120, 90, 80, 0.12));
+  animation: petalFall 26s ease-in-out infinite;
+}
+
+.petal-rain span::after {
+  content: "";
+  position: absolute;
+  width: 55%;
+  height: 1px;
+  top: 48%;
+  left: 22%;
+  background: rgba(190, 145, 145, 0.25);
+  transform: rotate(35deg);
+}
+
+.petal-rain span:nth-child(1) { left: 7%; animation-delay: 0s; animation-duration: 28s; }
+.petal-rain span:nth-child(2) { left: 22%; animation-delay: 5s; animation-duration: 32s; width: 19px; height: 28px; opacity: 0.58; }
+.petal-rain span:nth-child(3) { left: 39%; animation-delay: 2s; animation-duration: 30s; }
+.petal-rain span:nth-child(4) { left: 61%; animation-delay: 8s; animation-duration: 34s; width: 20px; height: 30px; opacity: 0.6; }
+.petal-rain span:nth-child(5) { left: 76%; animation-delay: 4s; animation-duration: 31s; }
+.petal-rain span:nth-child(6) { left: 91%; animation-delay: 10s; animation-duration: 36s; width: 18px; height: 27px; opacity: 0.55; }
 
 @keyframes petalFall {
   0% {
-    transform: translateY(-10vh) translateX(0) rotate(0deg);
+    transform: translateY(-12vh) translateX(0) rotate(0deg);
     opacity: 0;
   }
-  15% {
-    opacity: 0.4;
+  12% {
+    opacity: 0.72;
   }
-  50% {
-    transform: translateY(50vh) translateX(45px) rotate(120deg);
+  38% {
+    transform: translateY(38vh) translateX(55px) rotate(95deg);
+  }
+  68% {
+    transform: translateY(72vh) translateX(-35px) rotate(190deg);
   }
   100% {
-    transform: translateY(110vh) translateX(-35px) rotate(260deg);
+    transform: translateY(112vh) translateX(60px) rotate(310deg);
     opacity: 0;
   }
 }
