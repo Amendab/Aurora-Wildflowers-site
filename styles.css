@@ -545,11 +545,38 @@ button, input, select, textarea { font: inherit; }
   .reveal { opacity: 1; transform: none; transition: none; }
   .button:hover { transform: none; }
 }
-<div class="petal-rain" aria-hidden="true">
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
+.petal-rain span {
+  position: absolute;
+  top: -8%;
+  width: 18px;
+  height: 28px;
+  background: radial-gradient(circle at 35% 30%, rgba(255,255,255,0.95), rgba(246,232,226,0.55) 55%, rgba(230,190,185,0.25));
+  border-radius: 70% 30% 65% 35%;
+  opacity: 0.45;
+  animation: petalFall 18s linear infinite;
+  transform: rotate(20deg);
+}
+
+.petal-rain span:nth-child(1) { left: 8%; animation-delay: 0s; animation-duration: 22s; }
+.petal-rain span:nth-child(2) { left: 22%; animation-delay: 5s; animation-duration: 26s; width: 14px; height: 22px; }
+.petal-rain span:nth-child(3) { left: 41%; animation-delay: 2s; animation-duration: 24s; }
+.petal-rain span:nth-child(4) { left: 63%; animation-delay: 8s; animation-duration: 28s; width: 15px; height: 24px; }
+.petal-rain span:nth-child(5) { left: 78%; animation-delay: 4s; animation-duration: 25s; }
+.petal-rain span:nth-child(6) { left: 92%; animation-delay: 10s; animation-duration: 30s; width: 13px; height: 21px; }
+
+@keyframes petalFall {
+  0% {
+    transform: translateY(-10vh) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateY(50vh) translateX(45px) rotate(120deg);
+  }
+  100% {
+    transform: translateY(110vh) translateX(-35px) rotate(260deg);
+    opacity: 0;
+  }
+}
