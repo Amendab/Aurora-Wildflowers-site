@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Aurora Wildflowers by Amanda — handcrafted resin keepsakes, flower preservation, pet memorials, coasters, keychains and personalized gifts.">
+  <title>Aurora Wildflowers by Amanda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#top" aria-label="Aurora Wildflowers home">
+    <span class="brand-script">Aurora</span>
+    <span class="brand-main">WILDFLOWERS</span>
+    <span class="brand-sub">BY AMANDA</span>
+  </a>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" class="nav" aria-label="Main navigation">
+    <a href="#catalogue">Catalogue</a>
+    <a href="#how-it-works">How it works</a>
+    <a href="#about">About</a>
+    <a class="nav-cta" href="https://wa.me/16728339631" target="_blank" rel="noreferrer">Order on WhatsApp</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="eyebrow">Handcrafted in Terrace, BC</p>
+      <h1>Preserve the moments<br>you never want to lose.</h1>
+      <p>Custom resin art made with flowers, photographs, pet keepsakes and meaningful details.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#catalogue">Explore the catalogue</a>
+        <a class="btn btn-ghost" href="https://wa.me/16728339631" target="_blank" rel="noreferrer">Message the business</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="intro" id="about">
+    <p class="eyebrow">Aurora Wildflowers by Amanda</p>
+    <h2>Made slowly. Made personally. Made to last.</h2>
+    <p>Every piece is handmade and customized around your story. Choose a product below, view the available options, and send your order request directly through WhatsApp.</p>
+  </section>
+
+  <section class="catalogue" id="catalogue">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Shop by collection</p>
+        <h2>Catalogue</h2>
+      </div>
+      <div class="filters" id="filters" aria-label="Product categories"></div>
+    </div>
+    <div class="product-grid" id="productGrid"></div>
+  </section>
+
+  <section class="process" id="how-it-works">
+    <div class="section-heading compact">
+      <div>
+        <p class="eyebrow">Simple ordering</p>
+        <h2>How it works</h2>
+      </div>
+    </div>
+    <div class="steps">
+      <article><span>01</span><h3>Choose your piece</h3><p>Browse the catalogue and open any item to view photos, pricing and customization details.</p></article>
+      <article><span>02</span><h3>Send your request</h3><p>Use the WhatsApp button on the product page. The item name is added automatically to your message.</p></article>
+      <article><span>03</span><h3>Confirm the design</h3><p>Share your colours, wording, photographs or keepsake items and receive confirmation before production.</p></article>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="brand footer-brand"><span class="brand-script">Aurora</span><span class="brand-main">WILDFLOWERS</span><span class="brand-sub">BY AMANDA</span></div>
+  <p>Handcrafted resin keepsakes and personalized gifts.</p>
+  <a href="https://wa.me/16728339631" target="_blank" rel="noreferrer">WhatsApp: +1 672 833 9631</a>
+</footer>
+
+<div class="modal" id="productModal" aria-hidden="true">
+  <div class="modal-backdrop" data-close></div>
+  <article class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" type="button" aria-label="Close" data-close>×</button>
+    <div class="modal-gallery">
+      <img id="modalImage" alt="">
+      <div class="thumbs" id="modalThumbs"></div>
+    </div>
+    <div class="modal-info">
+      <p class="modal-category" id="modalCategory"></p>
+      <h2 id="modalTitle"></h2>
+      <div class="price-row"><strong id="modalPrice"></strong><del id="modalOldPrice"></del></div>
+      <div class="description" id="modalDescription"></div>
+      <a class="btn btn-primary full" id="modalWhatsApp" target="_blank" rel="noreferrer">Add to order request</a>
+    </div>
+  </article>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
