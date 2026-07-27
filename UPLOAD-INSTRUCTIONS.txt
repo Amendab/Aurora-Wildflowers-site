@@ -1,0 +1,2 @@
+Upload index.html and all image-* files together to the ROOT of your GitHub repository.
+Do not rename the image files. Commit to the main branch, then wait for Vercel.
