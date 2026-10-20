@@ -1,0 +1,7 @@
+Aurora Wildflowers — Baby Memory Keeper + falling autumn leaves
+
+Upload the five files INSIDE this ZIP to the ROOT of your GitHub repository (where your current index.html lives). Do not upload the ZIP itself. Replace index.html. Keep all other website files in place.
+
+This is a SMALL UPDATE ONLY, based on the last approved Memorial + Pet index.html. It assumes all your existing image files, including memorial-approved-* and pet-approved-*, are already present in GitHub. If they are not, do not upload this patch alone; ask for a complete package.
+
+Baby gallery: 3rd submitted image first, then 1, 2, 4. Approved description applied. Prices unchanged. Fall leaves visible throughout, decorative and disabled when reduced-motion is preferred. New baby photos are byte-for-byte copies of the originals.
